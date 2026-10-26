@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library - Members</title>
+
+    <link rel="stylesheet" href="members.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>📚 Library</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="books.html">Books</a>
+            <a href="members.html" class="active">Members</a>
+            <a href="issue-return.html">Issue / Return</a>
+        </nav>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="top-bar">
+            <div>
+                <h1>Members</h1>
+                <p>Manage library members</p>
+            </div>
+
+            <button class="add-btn" onclick="openMemberForm()">
+                + Add Member
+            </button>
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Total Members</h3>
+                <p id="totalMembers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Active Members</h3>
+                <p id="activeMembers">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Inactive Members</h3>
+                <p id="inactiveMembers">0</p>
+            </div>
+
+        </section>
+
+
+        <!-- Search -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchMember"
+                placeholder="Search member by name or ID..."
+                onkeyup="searchMembers()"
+            >
+        </div>
+
+
+        <!-- Members Table -->
+        <section class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Membership</th>
+                        <th>Join Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="memberTableBody">
+                    <!-- JavaScript will add members here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- Add/Edit Member Modal -->
+    <div id="memberModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeMemberForm()">&times;</span>
+
+            <h2 id="formTitle">Add Member</h2>
+
+            <form id="memberForm">
+
+                <input type="hidden" id="editMemberId">
+
+                <label>Member Name</label>
+                <input
+                    type="text"
+                    id="memberName"
+                    placeholder="Enter member name"
+                    required
+                >
+
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="memberEmail"
+                    placeholder="Enter email"
+                    required
+                >
+
+                <label>Phone</label>
+                <input
+                    type="text"
+                    id="memberPhone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+                <label>Membership Type</label>
+
+                <select id="membershipType" required>
+                    <option value="">Select membership</option>
+                    <option value="Student">Student</option>
+                    <option value="Faculty">Faculty</option>
+                    <option value="General">General</option>
+                </select>
+
+                <label>Join Date</label>
+
+                <input
+                    type="date"
+                    id="joinDate"
+                    required
+                >
+
+                <label>Status</label>
+
+                <select id="memberStatus">
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+
+                <button type="submit" class="save-btn">
+                    Save Member
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="members.js"></script>
+
+</body>
+</html>
