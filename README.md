@@ -10,7 +10,9 @@ A simple Book Library application that lets you Create, Read, Update, and Delete
 🔍 Search / Filter (optional) – Find books by title or author
 🛠️ Tech Stack
 
+
 Replace these with the technologies you actually used.
+
 
 Layer	Technology
 Frontend	HTML, CSS, JavaScript / React
@@ -31,6 +33,9 @@ book-library/
 ├── .gitignore
 ├── package.json
 └── README.md
+
+
+
 🚀 Getting Started
 Prerequisites
 Node.js (v14 or higher)
@@ -70,7 +75,9 @@ json
 }
 📸 Screenshots
 
+
 Add screenshots of your app here.
+
 
 Book List	Add Book	Edit Book
 List	Add	Edit
@@ -79,12 +86,14 @@ Create – The user fills in the form and submits it. A POST request saves the b
 Read – A GET request fetches all books and displays them in a list or table.
 Update – The user clicks Edit, changes the details, and a PUT request updates the record.
 Delete – The user clicks Delete, and a DELETE request removes the book.
+
 🔮 Future Improvements
 User login and authentication
 Borrow / return tracking
 Book cover image upload
 Pagination and sorting
 Mobile-friendly design
+
 🤝 Contributing
 Fork the repository
 Create a new branch (git checkout -b feature/your-feature)
@@ -92,6 +101,7 @@ Commit your changes (git commit -m "Add your feature")
 Push to the branch (git push origin feature/your-feature)
 Open a Pull Request
 📄 License
+
 
 This project is licensed under the MIT License.
 
