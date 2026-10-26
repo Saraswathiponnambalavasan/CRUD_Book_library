@@ -19,7 +19,9 @@ Frontend	HTML, CSS, JavaScript / React
 Backend	Node.js, Express.js
 Database	MongoDB / MySQL / SQLite
 Tools	VS Code, Git, GitHub
+
 📁 Project Structure
+
 book-library/
 ├── backend/
 │   ├── models/         # Database models (Book)
@@ -107,7 +109,6 @@ This project is licensed under the MIT License.
 
 👤 Author
 
-Your Name
-
-GitHub: @YOUR-USERNAME
-Email: you@example.com
+Saraswathi
+GitHub: https://github.com/Saraswathiponnambalavasan
+Email: saraswathiponnambalavasan@gmail.com
